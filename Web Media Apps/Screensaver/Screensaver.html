@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Week 1B</title>
+	<style type="text/css">
+	canvas{
+		border:1px solid #808080;
+        background-color: #000000;
+	}
+	</style>
+	<script>
+		// #0 - in this class we will always use ECMAScript 5's "strict" mode
+		// See what 'use strict' does here:
+		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
+		'use strict';
+		
+		// #1 call the `init` function after the pages loads
+		window.onload = init;
+
+        /*for(let i = 0; i < 46; i++){
+            let canvas = document.querySelector('canvas');
+			
+			// B - the `ctx` variable points at a "2D drawing context"
+			let ctx = canvas.getContext('2d');
+			
+			// C - all fill operations are now in red
+			ctx.fillStyle = getRandomColor(); 
+			
+			// D - fill a rectangle with the current fill color
+			ctx.fillRect(getRandomInt(0, 1520),getRandomInt(0, 700),600,440);
+        }*/
+	
+		function init(){
+			console.log("page loaded!");
+			// #2 Now that the page has loaded, start drawing!
+			
+            for(let j = 0; j < 10; j++){
+                for(let i = 0; i < 30000; i++){
+                // A - `canvas` variable points at <canvas> tag
+                setTimeout(function(){
+                let canvas = document.querySelector('canvas');
+
+			    // B - the `ctx` variable points at a "2D drawing context"
+			    let ctx = canvas.getContext('2d');
+			
+			    // C - all fill operations are now in red
+			    ctx.fillStyle = getRandomColor();
+           
+			    // D - fill a rectangle with the current fill color
+			    ctx.fillRect(getRandomInt(0, 1520),getRandomInt(0, 700),getRandomInt(0, 150),getRandomInt(0, 150));
+                }, 10);
+                			
+                }
+				//Clear();  
+            }            
+		}
+
+        // handy helper functions!
+        //Returns a random color
+        function getRandomColor(){
+            function getByte(){
+                return 55 + Math.round(Math.random() * 200);
+            }
+        return "rgba(" + getByte() + "," + getByte() + "," + getByte() + ",.8)";
+        }
+
+        //Returns a random number based on set min and max values
+        function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function Clear(){
+            ctx.clearRect(0, 0, 1520, 700);
+        }
+	</script>
+</head>
+<body>
+	<canvas width="1520" height="700">
+		Get a real browser!
+	</canvas>
+</body>
+</html>
