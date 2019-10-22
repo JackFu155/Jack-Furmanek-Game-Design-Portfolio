@@ -1,0 +1,10 @@
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\bin\Debug\FurmanekJ-HW12.exe.config
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\bin\Debug\FurmanekJ-HW12.exe
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\bin\Debug\FurmanekJ-HW12.pdb
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\obj\Debug\FurmanekJ-HW12.csprojResolveAssemblyReference.cache
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\obj\Debug\FurmanekJ_HW12.Form1.resources
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\obj\Debug\FurmanekJ_HW12.Properties.Resources.resources
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\obj\Debug\FurmanekJ-HW12.csproj.GenerateResource.Cache
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\obj\Debug\FurmanekJ-HW12.csproj.CoreCompileInputs.cache
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\obj\Debug\FurmanekJ-HW12.exe
+C:\Users\jackf\Desktop\GDAPS\Homework\FurmanekJ-HW12\FurmanekJ-HW12\obj\Debug\FurmanekJ-HW12.pdb
