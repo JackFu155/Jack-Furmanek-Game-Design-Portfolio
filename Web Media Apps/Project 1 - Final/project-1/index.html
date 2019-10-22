@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Project 1 Prototype</title>
+	<style rel="stylesheet" href="./css/normalize.css"></style>
+	<style rel="stylesheet" href="./css/skeleton.css"></style>
+	<link rel="stylesheet" href="./css/mainStyle.css"></style>
+	<script type = "module" src="./src/loader.js"></script>
+	<h1>Really Loud Music!!!</h1>
+</head>
+<body>
+	<canvas width="600" height="400"></canvas>
+	<div class = 'main' id="controls">
+		<audio></audio>
+		<!--types of controls
+		1. sliders (min 3)
+		- volume slide (complete)
+		- color slider (set of 3) - change color of the objects generated (complete)
+		- brightness slider (complete)
+		2. chackboxes (min 3)
+		- noise CB (complete)
+		- Sepia CB (complete)
+		- Invert CB (complete)
+		3. radio group
+		-Radio group controls objects that show up
+		-- circle (complete)
+		-- triangle (complete)
+		-- line (complete)
+		-- rectangle (complete)
+		4. way to change tracks
+		- drop down to change song tracks (complete)
+		5. buttons
+		- play button (complete)
+		- full-screen button (complete)
+		-->
+
+		<section class = 'row'>
+		<label title = "track selection">Track: 
+			<select id="trackSelect">
+				<option value="media/Summer-Of-69.mp3">Summer of 69</option>
+				<option value="media/Feel-The-Night.mp3">Feel the Night</option>
+				<option value="media/The-Power-Of-Love.mp3">The Power of Love</option>
+				<option value="media/What-Have-I-Done.mp3">What Have I Done</option>
+				<option value="media/What-Everybody-Wants.mp3" selected>What Everybody Wants</option>
+			</select>
+		</label>
+		<button class="row" id="playButton" data-playing="no" title = "play Button"></button>
+		<span id="timer">timer: <label id="minutes">00</label>:<label id="seconds">00</label></span>
+		<button   class="row" id="fsButton" title = "Full Screen Button">Full Screen</button>
+		</section>
+		<section class = 'row' id="sliders">
+			Red: <input type="range" id="RcolorSlider" min="0" max="255" value="65" step="5">
+			<span id="RcolorLabel">???</span>
+			Green: <input type="range" id="GcolorSlider" min="0" max="255" value="255" step="5">
+			<span id="GcolorLabel">???</span>
+			Blue: <input type="range" id="BcolorSlider" min="0" max="255" value="80" step="5">
+			<span id="BcolorLabel">???</span> <br>
+			Volume: <input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
+			<span id="volumeLabel">???</span>
+			Speed: <input type="range" id="speedSlider" min="1" max="10" value="5" step="1">
+			<span id="speedLabel">???</span>
+			Delay: <input type="range" id="delaySlider" min="0.0" max="1.0" value="0.5" step="0.1">
+			<span id="delayLabel">???</span>
+		</section>
+		<section class="row">
+			<span class = "four column CB"><label  for="noiseCB"> Noise<input type="checkbox" id="noiseCB"></label></span>
+			<span class = "four column CB"><label for="sepiaCB"> Sepia<input type="checkbox" id="sepiaCB"> </label></span> 
+			<span class = "four column CB"><label  for="invertCB">Invert<input type="checkbox" id="invertCB"></label></span>
+			<span class = "four column CB"><label  for="trailsCB">Ghosting<input type="checkbox" id="trailsCB"></label></span>
+			<span class = "four column CB"><label  for="waveformCB">Waveform<input type="checkbox" id="waveformCB"></label></span>
+		</section>
+		<br>
+		<section class="row">
+			<span>Circle<input name="shape" type="radio" id="circleRB" value='circleRB' checked></input></span>
+			<span>Traingle<input name="shape" type="radio" id="triangleRB" value='triangleRB'></input></span>
+			<span>Rectangle<input name="shape" type="radio" id="rectangleRB" value='rectangleRB'></input></span>
+			<span>Line<input name="shape" type="radio" id="lineRB" value='lineRB'></input></span>
+		</section>
+	</div>
+</body>
+</html>
